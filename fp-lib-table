@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name stm32)(type KiCad)(uri ${KIPRJMOD}/libs/stm32.pretty)(options "")(descr ""))
+  (lib (name w_conn_d-sub)(type KiCad)(uri ${KIPRJMOD}/libs/w_conn_d-sub.pretty)(options "")(descr ""))
+)
