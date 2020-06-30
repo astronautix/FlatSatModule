@@ -1,0 +1,51 @@
+Cmp-Mod V01 Created by PcbNew   date = 30/06/2020 10:08:50
+
+BeginCmp
+TimeStamp = 5EF3CFDB
+Path = /5EF371BB
+Reference = stm32101;
+ValeurCmp = STM32F429i-Discovery;
+IdModule  = stm32:stm32f429i-disco;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EFA1CEF
+Path = /5EFA753D
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EFA1CDC
+Path = /5EFA6C78
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EF9FF99
+Path = /5EFA0449
+Reference = J2;
+ValeurCmp = Micro_SD_Card_Det;
+IdModule  = Connector_Card:microSD_HC_Hirose_DM3D-SF;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EF6267D
+Path = /5EF85C75
+Reference = J1;
+ValeurCmp = HEADER_13x2;
+IdModule  = Connector_PinHeader_2.54mm:PinHeader_2x13_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EF62E2A
+Path = /5EF52A73
+Reference = J101;
+ValeurCmp = DB26_Male_HighDensity_MountingHoles;
+IdModule  = Connector_Dsub:DSUB-26-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm;
+EndCmp
+
+EndListe
