@@ -84,28 +84,6 @@ Text Label 9350 5550 0    50   ~ 0
 SD_DET
 Wire Wire Line
 	9350 5550 9000 5550
-$Comp
-L Connector:DB15_Female_HighDensity J1
-U 1 1 5F055F05
-P 1400 1750
-F 0 "J1" H 1400 2617 50  0000 C CNN
-F 1 "DB15_Female_HighDensity" H 1400 2526 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x2.54mm_EdgePinOffset9.40mm" H 450 2150 50  0001 C CNN
-F 3 " ~" H 450 2150 50  0001 C CNN
-	1    1400 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L w_connectors:HEADER_15 J3
-U 1 1 5F0575DD
-P 3500 1550
-F 0 "J3" H 3628 1603 60  0000 L CNN
-F 1 "HEADER_15" H 3628 1497 60  0000 L CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x15_P1.27mm_Vertical" H 3500 1550 60  0001 C CNN
-F 3 "" H 3500 1550 60  0000 C CNN
-	1    3500 1550
-	1    0    0    -1  
-$EndComp
 Text Label 5050 4100 2    50   ~ 0
 VCC3
 Text Label 5050 4200 2    50   ~ 0
@@ -298,45 +276,45 @@ Text Label 5200 2450 2    50   ~ 0
 PC12
 Text Label 5400 2450 0    50   ~ 0
 SDIO_CK
-Text Label 1100 2150 2    50   ~ 0
+Text Label 1300 2550 2    50   ~ 0
 I2C1_SDA
-Text Label 1700 2150 0    50   ~ 0
+Text Label 1900 2450 0    50   ~ 0
 I2C1_SCL
-Text Label 1100 2050 2    50   ~ 0
+Text Label 1300 2450 2    50   ~ 0
 I2C2_SDA
-Text Label 1700 1950 0    50   ~ 0
+Text Label 1900 2250 0    50   ~ 0
 I2C2_SCL
-Text Label 1100 1950 2    50   ~ 0
+Text Label 1300 2350 2    50   ~ 0
 SPI1_SCK
-Text Label 1100 1850 2    50   ~ 0
+Text Label 1300 2250 2    50   ~ 0
 SPI1_MISO
-Text Label 1100 1750 2    50   ~ 0
+Text Label 1300 2150 2    50   ~ 0
 SPI1_MOSI
-Text Label 1700 1750 0    50   ~ 0
+Text Label 1900 2050 0    50   ~ 0
 SPI4_SCK
-Text Label 1100 1650 2    50   ~ 0
+Text Label 1300 2050 2    50   ~ 0
 SPI4_MISO
-Text Label 1700 1550 0    50   ~ 0
+Text Label 1900 1850 0    50   ~ 0
 SPI4_MOSI
-Text Label 3400 2250 2    50   ~ 0
+Text Label 3575 2200 2    50   ~ 0
 I2C1_SDA
-Text Label 3400 2150 2    50   ~ 0
+Text Label 3575 2100 2    50   ~ 0
 I2C1_SCL
-Text Label 3400 2050 2    50   ~ 0
+Text Label 3875 2100 0    50   ~ 0
 I2C2_SDA
-Text Label 3400 1950 2    50   ~ 0
+Text Label 3875 2200 0    50   ~ 0
 I2C2_SDL
-Text Label 3400 1850 2    50   ~ 0
+Text Label 3575 2000 2    50   ~ 0
 SPI1_SCK
-Text Label 3400 1750 2    50   ~ 0
+Text Label 3575 1900 2    50   ~ 0
 SPI1_MISO
-Text Label 3400 1650 2    50   ~ 0
+Text Label 3575 1800 2    50   ~ 0
 SPI1_MOSI
-Text Label 3400 1550 2    50   ~ 0
+Text Label 3875 1800 0    50   ~ 0
 SPI4_SCK
-Text Label 3400 1450 2    50   ~ 0
+Text Label 3875 1900 0    50   ~ 0
 SPI4_MISO
-Text Label 3400 1350 2    50   ~ 0
+Text Label 3875 2000 0    50   ~ 0
 SPI4_MOSI
 Text Label 8200 3300 2    50   ~ 0
 SD_VSS
@@ -573,10 +551,10 @@ Wire Wire Line
 Text Label 5375 900  0    50   ~ 0
 GND
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5F0DE653
 P 5175 900
-F 0 "#PWR?" H 5175 650 50  0001 C CNN
+F 0 "#PWR0101" H 5175 650 50  0001 C CNN
 F 1 "GND" V 5180 772 50  0000 R CNN
 F 2 "" H 5175 900 50  0001 C CNN
 F 3 "" H 5175 900 50  0001 C CNN
@@ -584,10 +562,10 @@ F 3 "" H 5175 900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0102
 U 1 1 5F0DFC60
 P 5175 775
-F 0 "#PWR?" H 5175 625 50  0001 C CNN
+F 0 "#PWR0102" H 5175 625 50  0001 C CNN
 F 1 "VCC" V 5193 902 50  0000 L CNN
 F 2 "" H 5175 775 50  0001 C CNN
 F 3 "" H 5175 775 50  0001 C CNN
@@ -597,5 +575,93 @@ $EndComp
 Wire Wire Line
 	5175 775  5375 775 
 Text Label 5375 775  0    50   ~ 0
-VCC3
+VCC5
+Wire Wire Line
+	6175 1150 6375 1150
+Text Label 6175 1150 2    50   ~ 0
+PA11
+Text Label 6375 1150 0    50   ~ 0
+CAN1_RX
+Wire Wire Line
+	6175 1250 6375 1250
+Text Label 6175 1250 2    50   ~ 0
+PA12
+Text Label 6375 1250 0    50   ~ 0
+CAN1_TX
+Text Label 1300 1950 2    50   ~ 0
+CAN1_RX
+Text Label 1300 1850 2    50   ~ 0
+CAN1_TX
+Text Label 3575 1700 2    50   ~ 0
+CAN1_RX
+Text Label 3575 1600 2    50   ~ 0
+CAN1_TX
+Text Label 6375 1475 0    50   ~ 0
+UART1_TX
+Text Label 6175 1475 2    50   ~ 0
+PA9
+Wire Wire Line
+	6175 1475 6375 1475
+Text Label 6375 1375 0    50   ~ 0
+UART1_RX
+Text Label 6175 1375 2    50   ~ 0
+PA10
+Wire Wire Line
+	6175 1375 6375 1375
+Text Label 6375 1700 0    50   ~ 0
+UART2_TX
+Text Label 6175 1700 2    50   ~ 0
+PA2
+Text Label 6375 1600 0    50   ~ 0
+UART2_RX
+Text Label 6175 1600 2    50   ~ 0
+PA3
+Wire Wire Line
+	6175 1600 6375 1600
+Wire Wire Line
+	6175 1700 6375 1700
+Text Label 1900 1650 0    50   ~ 0
+UART1_RX
+Text Label 1300 1750 2    50   ~ 0
+UART1_TX
+Text Label 3875 1600 0    50   ~ 0
+UART1_RX
+Text Label 3875 1700 0    50   ~ 0
+UART1_TX
+$Comp
+L db26hd:DB26_Male_HighDensity_MountingHoles J1
+U 1 1 5F0EE44F
+P 1600 2150
+F 0 "J1" H 1600 3767 50  0000 C CNN
+F 1 "DB26_Male_HighDensity_MountingHoles" H 1600 3676 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-26-HD_Male_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" H 650 2550 50  0001 C CNN
+F 3 " ~" H 650 2550 50  0001 C CNN
+	1    1600 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L w_connectors:HEADER_13x2 J3
+U 1 1 5F0FC4D0
+P 3725 1600
+F 0 "J3" H 3725 2437 60  0000 C CNN
+F 1 "HEADER_13x2" H 3725 2331 60  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x13_P2.54mm_Vertical" H 3725 1600 60  0001 C CNN
+F 3 "" H 3725 1600 60  0000 C CNN
+	1    3725 1600
+	1    0    0    -1  
+$EndComp
+Text Label 1300 1550 2    50   ~ 0
+UART2_TX
+Text Label 1300 1650 2    50   ~ 0
+UART2_RX
+Text Label 3575 1500 2    50   ~ 0
+UART2_TX
+Text Label 3575 1400 2    50   ~ 0
+UART2_RX
+Text Label 1300 850  2    50   ~ 0
+VCC
+Text Label 1300 950  2    50   ~ 0
+GND
+Text Label 1600 2850 3    50   ~ 0
+GND
 $EndSCHEMATC
