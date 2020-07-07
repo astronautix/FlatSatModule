@@ -14,251 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L stm32:STM32F429i-Discovery stm32101
-U 1 1 5EF371BB
-P 2425 5800
-F 0 "stm32101" H 2425 7597 60  0000 C CNN
-F 1 "STM32F429i-Discovery" H 2425 7491 60  0000 C CNN
-F 2 "Varistor:RV_Disc_D15.5mm_W8mm_P7.5mm" H 2525 6450 60  0001 C CNN
-F 3 "" H 2525 6450 60  0000 C CNN
-	1    2425 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L stm32:STM32F429i-Discovery stm32101
-U 2 1 5EF39132
-P 5550 5800
-F 0 "stm32101" H 5550 7597 60  0000 C CNN
-F 1 "STM32F429i-Discovery" H 5550 7491 60  0000 C CNN
-F 2 "Varistor:RV_Disc_D15.5mm_W8mm_P7.5mm" H 5650 6450 60  0001 C CNN
-F 3 "" H 5650 6450 60  0000 C CNN
-	2    5550 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR04
-U 1 1 5EF5580A
-P 5050 7550
-F 0 "#PWR04" H 5050 7300 50  0001 C CNN
-F 1 "GND" H 5055 7377 50  0000 C CNN
-F 2 "" H 5050 7550 50  0001 C CNN
-F 3 "" H 5050 7550 50  0001 C CNN
-	1    5050 7550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 5EF55F6D
-P 2850 3150
-F 0 "#PWR03" H 2850 2900 50  0001 C CNN
-F 1 "GND" H 2855 2977 50  0000 C CNN
-F 2 "" H 2850 3150 50  0001 C CNN
-F 3 "" H 2850 3150 50  0001 C CNN
-	1    2850 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5EF56834
-P 2975 7450
-F 0 "#PWR01" H 2975 7200 50  0001 C CNN
-F 1 "GND" H 2980 7277 50  0000 C CNN
-F 2 "" H 2975 7450 50  0001 C CNN
-F 3 "" H 2975 7450 50  0001 C CNN
-	1    2975 7450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2925 7350 2975 7350
-Wire Wire Line
-	2975 7350 2975 7450
-Wire Wire Line
-	2850 3000 2850 3150
-Wire Wire Line
-	5050 7550 5050 7350
-Wire Wire Line
-	1950 4950 1925 4950
-Connection ~ 1925 4950
-Wire Wire Line
-	1925 4950 1650 4950
-Wire Wire Line
-	1950 4850 1925 4850
-Connection ~ 1925 4850
-Wire Wire Line
-	1925 4850 1650 4850
-Wire Wire Line
-	1950 4750 1925 4750
-Connection ~ 1925 4750
-Wire Wire Line
-	1925 4750 1650 4750
-Text Label 1650 4950 2    50   ~ 0
-SPI4_SCK
-Text Label 1650 4850 2    50   ~ 0
-SPI4_SS
-Text Label 1650 4750 2    50   ~ 0
-SPI4_MOSI
-Wire Wire Line
-	2900 4850 2925 4850
-Connection ~ 2925 4850
-Wire Wire Line
-	2925 4850 3100 4850
-Text Label 3100 4850 0    50   ~ 0
-SPI4_MISO
-Wire Wire Line
-	1950 6250 1925 6250
-Connection ~ 1925 6250
-Wire Wire Line
-	1925 6250 1650 6250
-Text Label 1650 6250 2    50   ~ 0
-CAN1_H
-Wire Wire Line
-	1950 6650 1925 6650
-Connection ~ 1925 6650
-Wire Wire Line
-	1925 6650 1650 6650
-Text Label 1650 6650 2    50   ~ 0
-CAN1_L
-Wire Wire Line
-	1950 5350 1925 5350
-Connection ~ 1925 5350
-Wire Wire Line
-	1925 5350 1650 5350
-Text Label 1650 5350 2    50   ~ 0
-I2C1_SCL
-Wire Wire Line
-	2900 5150 2925 5150
-Connection ~ 2925 5150
-Wire Wire Line
-	2925 5150 3100 5150
-Text Label 3100 5150 0    50   ~ 0
-I2C1_SDA
-Wire Wire Line
-	1950 6850 1925 6850
-Connection ~ 1925 6850
-Wire Wire Line
-	1925 6850 1650 6850
-Text Label 1650 6850 2    50   ~ 0
-I2C3_SCL
-Wire Wire Line
-	2900 6850 2925 6850
-Connection ~ 2925 6850
-Wire Wire Line
-	2925 6850 3200 6850
-Text Label 3200 6850 0    50   ~ 0
-I2C3_SDA
-Wire Wire Line
-	1950 6050 1925 6050
-Connection ~ 1925 6050
-Wire Wire Line
-	1925 6050 1700 6050
-Text Label 1700 6050 2    50   ~ 0
-UART2_TX
-Wire Wire Line
-	2900 5950 2925 5950
-Connection ~ 2925 5950
-Wire Wire Line
-	2925 5950 3100 5950
-Text Label 3100 5950 0    50   ~ 0
-UART2_RX
-Text Label 2250 1000 2    50   ~ 0
-VCC
-Wire Wire Line
-	2550 1100 2250 1100
-$Comp
-L power:GND #PWR02
-U 1 1 5EF732EF
-P 2250 1100
-F 0 "#PWR02" H 2250 850 50  0001 C CNN
-F 1 "GND" V 2255 972 50  0000 R CNN
-F 2 "" H 2250 1100 50  0001 C CNN
-F 3 "" H 2250 1100 50  0001 C CNN
-	1    2250 1100
-	0    1    1    0   
-$EndComp
-$Comp
-L db26hd:DB26_Male_HighDensity_MountingHoles J101
-U 1 1 5EF52A73
-P 2850 2300
-F 0 "J101" H 2850 3917 50  0000 C CNN
-F 1 "DB26_Male_HighDensity_MountingHoles" H 2850 3826 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-26-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" H 1900 2700 50  0001 C CNN
-F 3 " ~" H 1900 2700 50  0001 C CNN
-	1    2850 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 1000 2250 1000
-Text Label 2550 2700 2    50   ~ 0
-SPI4_SS
-Text Label 2550 2600 2    50   ~ 0
-SPI4_MOSI
-Text Label 3150 2600 0    50   ~ 0
-SPI4_MISO
-Text Label 2550 2500 2    50   ~ 0
-SPI4_SCK
-Text Label 2550 2400 2    50   ~ 0
-CAN1_H
-Text Label 3150 2400 0    50   ~ 0
-CAN1_L
-Wire Wire Line
-	1950 4250 1925 4250
-Connection ~ 1925 4250
-Wire Wire Line
-	1925 4250 1700 4250
-Text Label 1700 4250 2    50   ~ 0
-VCC
-Text Label 2550 2300 2    50   ~ 0
-I2C1_SCL
-Text Label 2550 2200 2    50   ~ 0
-I2C1_SDA
-Text Label 3150 2200 0    50   ~ 0
-I2C3_SCL
-Text Label 2550 2100 2    50   ~ 0
-I2C3_SDA
-Text Label 2550 2000 2    50   ~ 0
-UART2_RX
-Text Label 3150 2000 0    50   ~ 0
-UART2_TX
-$Comp
-L w_connectors:HEADER_13x2 J1
-U 1 1 5EF85C75
-P 5250 1950
-F 0 "J1" H 5250 2787 60  0000 C CNN
-F 1 "HEADER_13x2" H 5250 2681 60  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x13_P2.54mm_Vertical" H 5250 1950 60  0001 C CNN
-F 3 "" H 5250 1950 60  0000 C CNN
-	1    5250 1950
-	1    0    0    -1  
-$EndComp
-Text Label 5100 1350 2    50   ~ 0
-VCC
-Text Label 5400 1350 0    50   ~ 0
-GND
-Text Label 5100 2550 2    50   ~ 0
-SPI4_SS
-Text Label 5400 2550 0    50   ~ 0
-SPI4_SCK
-Text Label 5100 2450 2    50   ~ 0
-SPI4_MOSI
-Text Label 5400 2450 0    50   ~ 0
-SPI4_MISO
-Text Label 5100 2350 2    50   ~ 0
-CAN1_H
-Text Label 5400 2350 0    50   ~ 0
-CAN1_L
-Text Label 5100 2250 2    50   ~ 0
-I2C1_SCL
-Text Label 5400 2250 0    50   ~ 0
-I2C1_SDA
-Text Label 5100 2150 2    50   ~ 0
-I2C3_SCL
-Text Label 5400 2150 0    50   ~ 0
-I2C3_SDA
-Text Label 5100 2050 2    50   ~ 0
-UART2_RX
-Text Label 5400 2050 0    50   ~ 0
-UART2_TX
-$Comp
 L Connector:Micro_SD_Card_Det J2
 U 1 1 5EFA0449
 P 9100 3200
@@ -314,39 +69,533 @@ F 3 "~" H 8300 5550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 9350 5000 0    50   ~ 0
-VCC
+VCC3
 Wire Wire Line
 	8700 5550 8450 5550
 Wire Wire Line
 	8700 5000 8400 5000
-$Comp
-L power:GND #PWR0101
-U 1 1 5EFB5C13
-P 7650 5750
-F 0 "#PWR0101" H 7650 5500 50  0001 C CNN
-F 1 "GND" H 7655 5577 50  0000 C CNN
-F 2 "" H 7650 5750 50  0001 C CNN
-F 3 "" H 7650 5750 50  0001 C CNN
-	1    7650 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8100 5000 7650 5000
 Wire Wire Line
 	8150 5550 7650 5550
 Wire Wire Line
-	7650 5000 7650 5550
-Connection ~ 7650 5550
-Wire Wire Line
-	7650 5550 7650 5750
-Wire Wire Line
 	9350 5000 9000 5000
-Text Label 8200 3600 2    50   ~ 0
-VCC
-Text Label 8200 3700 2    50   ~ 0
-SD_DET
 Text Label 9350 5550 0    50   ~ 0
 SD_DET
 Wire Wire Line
 	9350 5550 9000 5550
+$Comp
+L Connector:DB15_Female_HighDensity J1
+U 1 1 5F055F05
+P 1400 1750
+F 0 "J1" H 1400 2617 50  0000 C CNN
+F 1 "DB15_Female_HighDensity" H 1400 2526 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x2.54mm_EdgePinOffset9.40mm" H 450 2150 50  0001 C CNN
+F 3 " ~" H 450 2150 50  0001 C CNN
+	1    1400 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L w_connectors:HEADER_15 J3
+U 1 1 5F0575DD
+P 3500 1550
+F 0 "J3" H 3628 1603 60  0000 L CNN
+F 1 "HEADER_15" H 3628 1497 60  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x15_P1.27mm_Vertical" H 3500 1550 60  0001 C CNN
+F 3 "" H 3500 1550 60  0000 C CNN
+	1    3500 1550
+	1    0    0    -1  
+$EndComp
+Text Label 5050 4100 2    50   ~ 0
+VCC3
+Text Label 5050 4200 2    50   ~ 0
+PF6
+Text Label 5050 4300 2    50   ~ 0
+PF8
+Text Label 5050 4400 2    50   ~ 0
+PF10
+Text Label 5050 4500 2    50   ~ 0
+PH1
+Text Label 5050 4700 2    50   ~ 0
+PC1
+Text Label 5050 4800 2    50   ~ 0
+PC3
+Text Label 5050 4900 2    50   ~ 0
+PA1
+Text Label 5050 5000 2    50   ~ 0
+PA3
+Text Label 5050 5100 2    50   ~ 0
+PA5
+Text Label 5050 5200 2    50   ~ 0
+PA7
+Text Label 5050 5300 2    50   ~ 0
+PC5
+Text Label 5050 5400 2    50   ~ 0
+PB1
+Text Label 5050 5600 2    50   ~ 0
+PF12
+Text Label 5050 5700 2    50   ~ 0
+PF14
+Text Label 5050 5800 2    50   ~ 0
+PG0
+Text Label 5050 5900 2    50   ~ 0
+PE7
+Text Label 5050 6000 2    50   ~ 0
+PE9
+Text Label 5050 6100 2    50   ~ 0
+PE11
+Text Label 5050 6200 2    50   ~ 0
+PE13
+Text Label 5050 6300 2    50   ~ 0
+PE15
+Text Label 5050 6400 2    50   ~ 0
+PB11
+Text Label 5050 6500 2    50   ~ 0
+PB13
+Text Label 5050 6600 2    50   ~ 0
+PB15
+Text Label 5050 6700 2    50   ~ 0
+PD9
+Text Label 5050 6800 2    50   ~ 0
+PD11
+Text Label 5050 6900 2    50   ~ 0
+PD13
+Text Label 5050 7000 2    50   ~ 0
+PD15
+Text Label 5050 7100 2    50   ~ 0
+PG3
+Text Label 6050 4100 0    50   ~ 0
+VCC3
+Text Label 6050 4200 0    50   ~ 0
+NC
+Text Label 6050 4300 0    50   ~ 0
+PF7
+Text Label 6050 4400 0    50   ~ 0
+PF9
+Text Label 6050 4500 0    50   ~ 0
+PH0
+Text Label 6050 4600 0    50   ~ 0
+NRST
+Text Label 6050 4700 0    50   ~ 0
+PC0
+Text Label 6050 4800 0    50   ~ 0
+PC2
+Text Label 6050 4900 0    50   ~ 0
+PA0
+Text Label 6050 5000 0    50   ~ 0
+PA2
+Text Label 6050 5100 0    50   ~ 0
+PA4
+Text Label 6050 5200 0    50   ~ 0
+PA6
+Text Label 6050 5300 0    50   ~ 0
+PC4
+Text Label 6050 5400 0    50   ~ 0
+PB0
+Text Label 6050 5500 0    50   ~ 0
+PB2
+Text Label 6050 5600 0    50   ~ 0
+PF11
+Text Label 6050 5700 0    50   ~ 0
+PF13
+Text Label 6050 5800 0    50   ~ 0
+PF15
+Text Label 6050 5900 0    50   ~ 0
+PG1
+Text Label 6050 6000 0    50   ~ 0
+PE8
+Text Label 6050 6100 0    50   ~ 0
+PE10
+Text Label 6050 6200 0    50   ~ 0
+PE12
+Text Label 6050 6300 0    50   ~ 0
+PE14
+Text Label 6050 6400 0    50   ~ 0
+PB10
+Text Label 6050 6500 0    50   ~ 0
+PB12
+Text Label 6050 6600 0    50   ~ 0
+PB14
+Text Label 6050 6700 0    50   ~ 0
+PD8
+Text Label 6050 6800 0    50   ~ 0
+PD10
+Text Label 6050 6900 0    50   ~ 0
+PD12
+Text Label 6050 7000 0    50   ~ 0
+PD14
+Text Label 6050 7100 0    50   ~ 0
+PG2
+Wire Wire Line
+	5200 1150 5400 1150
+Text Label 5200 1150 2    50   ~ 0
+PB7
+Text Label 5400 1150 0    50   ~ 0
+I2C1_SDA
+Wire Wire Line
+	5200 1250 5400 1250
+Text Label 5200 1250 2    50   ~ 0
+PB8
+Text Label 5400 1250 0    50   ~ 0
+I2C1_SCL
+Wire Wire Line
+	5200 1400 5400 1400
+Text Label 5200 1400 2    50   ~ 0
+PB11
+Text Label 5400 1400 0    50   ~ 0
+I2C2_SDA
+Wire Wire Line
+	5200 1500 5400 1500
+Text Label 5200 1500 2    50   ~ 0
+PB10
+Text Label 5400 1500 0    50   ~ 0
+I2C2_SCL
+Wire Wire Line
+	5200 1650 5400 1650
+Text Label 5200 1650 2    50   ~ 0
+PA5
+Text Label 5400 1650 0    50   ~ 0
+SPI1_SCK
+Wire Wire Line
+	5200 1750 5400 1750
+Text Label 5200 1750 2    50   ~ 0
+PB4
+Text Label 5400 1750 0    50   ~ 0
+SPI1_MISO
+Wire Wire Line
+	5200 1850 5400 1850
+Text Label 5200 1850 2    50   ~ 0
+PA7
+Text Label 5400 1850 0    50   ~ 0
+SPI1_MOSI
+Wire Wire Line
+	5200 2000 5400 2000
+Text Label 5200 2000 2    50   ~ 0
+PE2
+Text Label 5400 2000 0    50   ~ 0
+SPI4_SCK
+Wire Wire Line
+	5200 2100 5400 2100
+Text Label 5200 2100 2    50   ~ 0
+PE5
+Text Label 5400 2100 0    50   ~ 0
+SPI4_MISO
+Wire Wire Line
+	5200 2200 5400 2200
+Text Label 5200 2200 2    50   ~ 0
+PE6
+Text Label 5400 2200 0    50   ~ 0
+SPI4_MOSI
+Wire Wire Line
+	5200 2350 5400 2350
+Text Label 5200 2350 2    50   ~ 0
+PD2
+Text Label 5400 2350 0    50   ~ 0
+SDIO_CMD
+Wire Wire Line
+	5200 2450 5400 2450
+Text Label 5200 2450 2    50   ~ 0
+PC12
+Text Label 5400 2450 0    50   ~ 0
+SDIO_CK
+Text Label 1100 2150 2    50   ~ 0
+I2C1_SDA
+Text Label 1700 2150 0    50   ~ 0
+I2C1_SCL
+Text Label 1100 2050 2    50   ~ 0
+I2C2_SDA
+Text Label 1700 1950 0    50   ~ 0
+I2C2_SCL
+Text Label 1100 1950 2    50   ~ 0
+SPI1_SCK
+Text Label 1100 1850 2    50   ~ 0
+SPI1_MISO
+Text Label 1100 1750 2    50   ~ 0
+SPI1_MOSI
+Text Label 1700 1750 0    50   ~ 0
+SPI4_SCK
+Text Label 1100 1650 2    50   ~ 0
+SPI4_MISO
+Text Label 1700 1550 0    50   ~ 0
+SPI4_MOSI
+Text Label 3400 2250 2    50   ~ 0
+I2C1_SDA
+Text Label 3400 2150 2    50   ~ 0
+I2C1_SCL
+Text Label 3400 2050 2    50   ~ 0
+I2C2_SDA
+Text Label 3400 1950 2    50   ~ 0
+I2C2_SDL
+Text Label 3400 1850 2    50   ~ 0
+SPI1_SCK
+Text Label 3400 1750 2    50   ~ 0
+SPI1_MISO
+Text Label 3400 1650 2    50   ~ 0
+SPI1_MOSI
+Text Label 3400 1550 2    50   ~ 0
+SPI4_SCK
+Text Label 3400 1450 2    50   ~ 0
+SPI4_MISO
+Text Label 3400 1350 2    50   ~ 0
+SPI4_MOSI
+Text Label 8200 3300 2    50   ~ 0
+SD_VSS
+Text Label 8200 3200 2    50   ~ 0
+SD_CLK
+Text Label 8200 2800 2    50   ~ 0
+SD_D2
+Text Label 8200 2900 2    50   ~ 0
+SD_D3
+Text Label 8200 3000 2    50   ~ 0
+SD_CMD
+Text Label 8200 3100 2    50   ~ 0
+SD_VDD
+Text Label 8200 3400 2    50   ~ 0
+SD_D0
+Text Label 8200 3500 2    50   ~ 0
+SD_D1
+Text Label 8200 3600 2    50   ~ 0
+SD_DETA
+Text Label 8200 3700 2    50   ~ 0
+SD_DETB
+Wire Wire Line
+	5200 2550 5400 2550
+Text Label 5200 2550 2    50   ~ 0
+PC8
+Text Label 5400 2550 0    50   ~ 0
+SD_D0
+Wire Wire Line
+	5200 2650 5400 2650
+Text Label 5200 2650 2    50   ~ 0
+PC9
+Text Label 5400 2650 0    50   ~ 0
+SD_D1
+Wire Wire Line
+	5200 2750 5400 2750
+Text Label 5200 2750 2    50   ~ 0
+PC10
+Text Label 5400 2750 0    50   ~ 0
+SD_D2
+Wire Wire Line
+	5200 2850 5400 2850
+Text Label 5200 2850 2    50   ~ 0
+PC11
+Text Label 5400 2850 0    50   ~ 0
+SD_D3
+Text Label 5050 7200 2    50   ~ 0
+GND
+Text Label 6050 7200 0    50   ~ 0
+GND
+Text Label 5050 5500 2    50   ~ 0
+GND
+Text Label 5050 4600 2    50   ~ 0
+GND
+Text Label 1725 7200 2    50   ~ 0
+GND
+Text Label 2725 7200 0    50   ~ 0
+GND
+Text Label 1725 7100 2    50   ~ 0
+PG5
+Text Label 1725 7000 2    50   ~ 0
+PG7
+Text Label 1725 6900 2    50   ~ 0
+PC6
+Text Label 1725 6800 2    50   ~ 0
+PC8
+Text Label 1725 6700 2    50   ~ 0
+PA8
+Text Label 1725 6600 2    50   ~ 0
+PA10
+Text Label 1725 6500 2    50   ~ 0
+PA12
+Text Label 1725 6400 2    50   ~ 0
+PA14
+Text Label 1725 6300 2    50   ~ 0
+PC10
+Text Label 1725 6200 2    50   ~ 0
+PC12
+Text Label 1725 6100 2    50   ~ 0
+PD1
+Text Label 1725 6000 2    50   ~ 0
+PD3
+Text Label 1725 5900 2    50   ~ 0
+PD5
+Text Label 1725 5800 2    50   ~ 0
+PD7
+Text Label 1725 5700 2    50   ~ 0
+PG9
+Text Label 1725 5600 2    50   ~ 0
+PG11
+Text Label 1725 5500 2    50   ~ 0
+PG13
+Text Label 1725 5400 2    50   ~ 0
+PG15
+Text Label 1725 5300 2    50   ~ 0
+PB4
+Text Label 1725 5200 2    50   ~ 0
+PB6
+Text Label 1725 5100 2    50   ~ 0
+BOOT0
+Text Label 1725 5000 2    50   ~ 0
+PB8
+Text Label 1725 4900 2    50   ~ 0
+PE0
+Text Label 1725 4800 2    50   ~ 0
+PE2
+Text Label 1725 4700 2    50   ~ 0
+PE4
+Text Label 1725 4600 2    50   ~ 0
+PE6
+Text Label 1725 4500 2    50   ~ 0
+PC14
+Text Label 1725 4400 2    50   ~ 0
+PF0
+Text Label 1725 4300 2    50   ~ 0
+PF2
+Text Label 1725 4200 2    50   ~ 0
+PF4
+Text Label 1725 4100 2    50   ~ 0
+VCC5
+Text Label 2725 7100 0    50   ~ 0
+PG4
+Text Label 2725 7000 0    50   ~ 0
+PG6
+Text Label 2725 6900 0    50   ~ 0
+PG8
+Text Label 2725 6800 0    50   ~ 0
+PC7
+Text Label 2725 6700 0    50   ~ 0
+PC9
+Text Label 2725 6600 0    50   ~ 0
+PA9
+Text Label 2725 6500 0    50   ~ 0
+PA11
+Text Label 2725 6400 0    50   ~ 0
+PA13
+Text Label 2725 6300 0    50   ~ 0
+PA15
+Text Label 2725 6200 0    50   ~ 0
+PC11
+Text Label 2725 6100 0    50   ~ 0
+PD0
+Text Label 2725 6000 0    50   ~ 0
+PD2
+Text Label 2725 5900 0    50   ~ 0
+PD4
+Text Label 2725 5800 0    50   ~ 0
+PD6
+Text Label 2725 5700 0    50   ~ 0
+PG10
+Text Label 2725 5600 0    50   ~ 0
+PG12
+Text Label 2725 5500 0    50   ~ 0
+PG14
+Text Label 2725 5400 0    50   ~ 0
+PB3
+Text Label 2725 5300 0    50   ~ 0
+PB5
+Text Label 2725 5200 0    50   ~ 0
+PB7
+Text Label 2725 5100 0    50   ~ 0
+VDD
+Text Label 2725 5000 0    50   ~ 0
+PB9
+Text Label 2725 4900 0    50   ~ 0
+PE1
+Text Label 2725 4800 0    50   ~ 0
+PE3
+Text Label 2725 4700 0    50   ~ 0
+PE5
+Text Label 2725 4600 0    50   ~ 0
+PC13
+Text Label 2725 4500 0    50   ~ 0
+PC15
+Text Label 2725 4400 0    50   ~ 0
+PF1
+Text Label 2725 4300 0    50   ~ 0
+PF3
+Text Label 2725 4200 0    50   ~ 0
+PF5
+Text Label 2725 4100 0    50   ~ 0
+VCC5
+$Comp
+L stm32:STM32F429i-Discovery stm32101
+U 2 1 5EF39132
+P 5550 5650
+F 0 "stm32101" H 5550 7447 60  0000 C CNN
+F 1 "STM32F429i-Discovery" H 5550 7341 60  0000 C CNN
+F 2 "stm32:stm32f429i-disco" H 5650 6300 60  0001 C CNN
+F 3 "" H 5650 6300 60  0000 C CNN
+	2    5550 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L stm32:STM32F429i-Discovery stm32101
+U 1 1 5EF371BB
+P 2225 5650
+F 0 "stm32101" H 2225 7447 60  0000 C CNN
+F 1 "STM32F429i-Discovery" H 2225 7341 60  0000 C CNN
+F 2 "stm32:stm32f429i-disco" H 2325 6300 60  0001 C CNN
+F 3 "" H 2325 6300 60  0000 C CNN
+	1    2225 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2950 5400 2950
+Text Label 5200 2950 2    50   ~ 0
+VCC3
+Text Label 5400 2950 0    50   ~ 0
+SD_DETA
+Wire Wire Line
+	5200 3050 5400 3050
+Text Label 5200 3050 2    50   ~ 0
+SD_DET
+Text Label 5400 3050 0    50   ~ 0
+SD_DETB
+Wire Wire Line
+	5200 3150 5400 3150
+Text Label 5200 3150 2    50   ~ 0
+GND
+Text Label 5400 3150 0    50   ~ 0
+SD_VSS
+Wire Wire Line
+	5200 3250 5400 3250
+Text Label 5200 3250 2    50   ~ 0
+VCC3
+Text Label 5400 3250 0    50   ~ 0
+SD_VDD
+Text Label 7650 5000 2    50   ~ 0
+GND
+Text Label 7650 5550 2    50   ~ 0
+GND
+Wire Wire Line
+	5175 900  5375 900 
+Text Label 5375 900  0    50   ~ 0
+GND
+$Comp
+L power:GND #PWR?
+U 1 1 5F0DE653
+P 5175 900
+F 0 "#PWR?" H 5175 650 50  0001 C CNN
+F 1 "GND" V 5180 772 50  0000 R CNN
+F 2 "" H 5175 900 50  0001 C CNN
+F 3 "" H 5175 900 50  0001 C CNN
+	1    5175 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5F0DFC60
+P 5175 775
+F 0 "#PWR?" H 5175 625 50  0001 C CNN
+F 1 "VCC" V 5193 902 50  0000 L CNN
+F 2 "" H 5175 775 50  0001 C CNN
+F 3 "" H 5175 775 50  0001 C CNN
+	1    5175 775 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5175 775  5375 775 
+Text Label 5375 775  0    50   ~ 0
+VCC3
 $EndSCHEMATC
