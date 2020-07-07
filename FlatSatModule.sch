@@ -142,8 +142,6 @@ Text Label 5050 7000 2    50   ~ 0
 PD15
 Text Label 5050 7100 2    50   ~ 0
 PG3
-Text Label 6050 4100 0    50   ~ 0
-VCC3
 Text Label 6050 4200 0    50   ~ 0
 NC
 Text Label 6050 4300 0    50   ~ 0
@@ -247,34 +245,34 @@ PA7
 Text Label 5400 1850 0    50   ~ 0
 SPI1_MOSI
 Wire Wire Line
-	5200 2000 5400 2000
-Text Label 5200 2000 2    50   ~ 0
-PE2
-Text Label 5400 2000 0    50   ~ 0
-SPI4_SCK
-Wire Wire Line
 	5200 2100 5400 2100
 Text Label 5200 2100 2    50   ~ 0
-PE5
+PE2
 Text Label 5400 2100 0    50   ~ 0
-SPI4_MISO
+SPI4_SCK
 Wire Wire Line
 	5200 2200 5400 2200
 Text Label 5200 2200 2    50   ~ 0
-PE6
+PE5
 Text Label 5400 2200 0    50   ~ 0
+SPI4_MISO
+Wire Wire Line
+	5200 2300 5400 2300
+Text Label 5200 2300 2    50   ~ 0
+PE6
+Text Label 5400 2300 0    50   ~ 0
 SPI4_MOSI
 Wire Wire Line
-	5200 2350 5400 2350
-Text Label 5200 2350 2    50   ~ 0
+	5200 2550 5400 2550
+Text Label 5200 2550 2    50   ~ 0
 PD2
-Text Label 5400 2350 0    50   ~ 0
+Text Label 5400 2550 0    50   ~ 0
 SDIO_CMD
 Wire Wire Line
-	5200 2450 5400 2450
-Text Label 5200 2450 2    50   ~ 0
+	5200 2650 5400 2650
+Text Label 5200 2650 2    50   ~ 0
 PC12
-Text Label 5400 2450 0    50   ~ 0
+Text Label 5400 2650 0    50   ~ 0
 SDIO_CK
 Text Label 1300 2550 2    50   ~ 0
 I2C1_SDA
@@ -292,7 +290,7 @@ Text Label 1300 2150 2    50   ~ 0
 SPI1_MOSI
 Text Label 1900 2050 0    50   ~ 0
 SPI4_SCK
-Text Label 1300 2050 2    50   ~ 0
+Text Label 1300 1950 2    50   ~ 0
 SPI4_MISO
 Text Label 1900 1850 0    50   ~ 0
 SPI4_MOSI
@@ -337,38 +335,34 @@ SD_DETA
 Text Label 8200 3700 2    50   ~ 0
 SD_DETB
 Wire Wire Line
-	5200 2550 5400 2550
-Text Label 5200 2550 2    50   ~ 0
-PC8
-Text Label 5400 2550 0    50   ~ 0
-SD_D0
-Wire Wire Line
-	5200 2650 5400 2650
-Text Label 5200 2650 2    50   ~ 0
-PC9
-Text Label 5400 2650 0    50   ~ 0
-SD_D1
-Wire Wire Line
 	5200 2750 5400 2750
 Text Label 5200 2750 2    50   ~ 0
-PC10
+PC8
 Text Label 5400 2750 0    50   ~ 0
-SD_D2
+SD_D0
 Wire Wire Line
 	5200 2850 5400 2850
 Text Label 5200 2850 2    50   ~ 0
-PC11
+PC9
 Text Label 5400 2850 0    50   ~ 0
+SD_D1
+Wire Wire Line
+	5200 2950 5400 2950
+Text Label 5200 2950 2    50   ~ 0
+PC10
+Text Label 5400 2950 0    50   ~ 0
+SD_D2
+Wire Wire Line
+	5200 3050 5400 3050
+Text Label 5200 3050 2    50   ~ 0
+PC11
+Text Label 5400 3050 0    50   ~ 0
 SD_D3
 Text Label 5050 7200 2    50   ~ 0
-GND
-Text Label 6050 7200 0    50   ~ 0
 GND
 Text Label 5050 5500 2    50   ~ 0
 GND
 Text Label 5050 4600 2    50   ~ 0
-GND
-Text Label 1725 7200 2    50   ~ 0
 GND
 Text Label 2725 7200 0    50   ~ 0
 GND
@@ -432,8 +426,6 @@ Text Label 1725 4300 2    50   ~ 0
 PF2
 Text Label 1725 4200 2    50   ~ 0
 PF4
-Text Label 1725 4100 2    50   ~ 0
-VCC5
 Text Label 2725 7100 0    50   ~ 0
 PG4
 Text Label 2725 7000 0    50   ~ 0
@@ -519,28 +511,28 @@ F 3 "" H 2325 6300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 2950 5400 2950
-Text Label 5200 2950 2    50   ~ 0
-VCC3
-Text Label 5400 2950 0    50   ~ 0
-SD_DETA
-Wire Wire Line
-	5200 3050 5400 3050
-Text Label 5200 3050 2    50   ~ 0
-SD_DET
-Text Label 5400 3050 0    50   ~ 0
-SD_DETB
-Wire Wire Line
 	5200 3150 5400 3150
 Text Label 5200 3150 2    50   ~ 0
-GND
+VCC3
 Text Label 5400 3150 0    50   ~ 0
-SD_VSS
+SD_DETA
 Wire Wire Line
 	5200 3250 5400 3250
 Text Label 5200 3250 2    50   ~ 0
-VCC3
+SD_DET
 Text Label 5400 3250 0    50   ~ 0
+SD_DETB
+Wire Wire Line
+	5200 3350 5400 3350
+Text Label 5200 3350 2    50   ~ 0
+GND
+Text Label 5400 3350 0    50   ~ 0
+SD_VSS
+Wire Wire Line
+	5200 3450 5400 3450
+Text Label 5200 3450 2    50   ~ 0
+VCC3
+Text Label 5400 3450 0    50   ~ 0
 SD_VDD
 Text Label 7650 5000 2    50   ~ 0
 GND
@@ -588,13 +580,13 @@ Text Label 6175 1250 2    50   ~ 0
 PA12
 Text Label 6375 1250 0    50   ~ 0
 CAN1_TX
-Text Label 1300 1950 2    50   ~ 0
+Text Label 1300 1750 2    50   ~ 0
 CAN1_RX
-Text Label 1300 1850 2    50   ~ 0
+Text Label 1300 1650 2    50   ~ 0
 CAN1_TX
-Text Label 3575 1700 2    50   ~ 0
-CAN1_RX
 Text Label 3575 1600 2    50   ~ 0
+CAN1_RX
+Text Label 3575 1500 2    50   ~ 0
 CAN1_TX
 Text Label 6375 1475 0    50   ~ 0
 UART1_TX
@@ -622,11 +614,11 @@ Wire Wire Line
 	6175 1700 6375 1700
 Text Label 1900 1650 0    50   ~ 0
 UART1_RX
-Text Label 1300 1750 2    50   ~ 0
+Text Label 1300 1550 2    50   ~ 0
 UART1_TX
-Text Label 3875 1600 0    50   ~ 0
+Text Label 3875 1500 0    50   ~ 0
 UART1_RX
-Text Label 3875 1700 0    50   ~ 0
+Text Label 3875 1600 0    50   ~ 0
 UART1_TX
 $Comp
 L db26hd:DB26_Male_HighDensity_MountingHoles J1
@@ -650,13 +642,11 @@ F 3 "" H 3725 1600 60  0000 C CNN
 	1    3725 1600
 	1    0    0    -1  
 $EndComp
-Text Label 1300 1550 2    50   ~ 0
-UART2_TX
-Text Label 1300 1650 2    50   ~ 0
+Text Label 1300 1450 2    50   ~ 0
 UART2_RX
-Text Label 3575 1500 2    50   ~ 0
-UART2_TX
 Text Label 3575 1400 2    50   ~ 0
+UART2_TX
+Text Label 3575 1300 2    50   ~ 0
 UART2_RX
 Text Label 1300 850  2    50   ~ 0
 VCC
@@ -664,4 +654,30 @@ Text Label 1300 950  2    50   ~ 0
 GND
 Text Label 1600 2850 3    50   ~ 0
 GND
+Wire Wire Line
+	5200 1950 5400 1950
+Text Label 5200 1950 2    50   ~ 0
+PA4
+Text Label 5400 1950 0    50   ~ 0
+SPI1_SS
+Wire Wire Line
+	5200 2400 5400 2400
+Text Label 5200 2400 2    50   ~ 0
+PE4
+Text Label 5400 2400 0    50   ~ 0
+SPI4_SS
+Text Label 1300 2050 2    50   ~ 0
+SPI1_SS
+Text Label 1300 1850 2    50   ~ 0
+SPI4_SS
+Text Label 1900 1450 0    50   ~ 0
+UART2_TX
+Text Label 3575 1700 2    50   ~ 0
+SPI1_SS
+Text Label 3875 1700 0    50   ~ 0
+SPI4_SS
+NoConn ~ 6050 4100
+NoConn ~ 6050 7200
+NoConn ~ 1725 7200
+NoConn ~ 1725 4100
 $EndSCHEMATC
