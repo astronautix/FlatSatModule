@@ -694,7 +694,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_2x13_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5F0511EB)
-    (at 88.9 68.58)
+    (at 87.63 68.58)
     (descr "Through hole straight pin header, 2x13, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x13 2.54mm double row")
     (path /5F0FC4D0)
@@ -784,7 +784,7 @@
   )
 
   (module Connector_Dsub:DSUB-26-HD_Male_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm (layer F.Cu) (tedit 59FEDEE2) (tstamp 5F051117)
-    (at 80.01 76.2 270)
+    (at 72.39 76.2 270)
     (descr "26-pin D-Sub connector, horizontal/angled (90 deg), THT-mount, male, pitch 2.29x1.98mm, pin-PCB-offset 8.35mm, distance of mounting holes 33.3mm, distance of mounting holes to PCB edge 10.889999999999999mm, see https://disti-assets.s3.amazonaws.com/tonar/files/datasheets/16730.pdf")
     (tags "26-pin D-Sub connector horizontal angled 90deg THT male pitch 2.29x1.98mm pin-PCB-offset 8.35mm mounting-holes-distance 33.3mm mounting-hole-offset 33.3mm")
     (path /5F0EE44F)
@@ -897,7 +897,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5B301BBD) (tstamp 5EFB00F6)
-    (at 86.5625 114.3)
+    (at 85.2925 114.3)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5EFB1F58)
@@ -933,7 +933,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5B301BBD) (tstamp 5EFB00E5)
-    (at 82.3475 55.88 180)
+    (at 81.0775 55.88 180)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5EFB0FAC)
@@ -969,7 +969,7 @@
   )
 
   (module LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer F.Cu) (tedit 5B4B45C9) (tstamp 5EFA1CEF)
-    (at 86.36 120.65)
+    (at 85.09 120.65)
     (descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "LED handsolder")
     (path /5EFA753D)
@@ -1007,7 +1007,7 @@
   )
 
   (module LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer F.Cu) (tedit 5B4B45C9) (tstamp 5EFA1CDC)
-    (at 88.9 55.88)
+    (at 87.63 55.88)
     (descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "LED handsolder")
     (path /5EFA6C78)
@@ -1045,7 +1045,7 @@
   )
 
   (module Connector_Card:microSD_HC_Hirose_DM3D-SF (layer F.Cu) (tedit 5B82D16A) (tstamp 5EF9FF99)
-    (at 67.31 118.11 90)
+    (at 66.04 118.11 90)
     (descr "Micro SD, SMD, right-angle, push-pull (https://media.digikey.com/PDF/Data%20Sheets/Hirose%20PDFs/DM3D-SF.pdf)")
     (tags "Micro SD")
     (path /5EFA0449)
