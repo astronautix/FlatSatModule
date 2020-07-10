@@ -147,11 +147,11 @@ SPI4_MOSI
 Wire Wire Line
 	8400 4950 8600 4950
 Text Label 8600 4950 0    50   ~ 0
-SDIO_CMD
+SD_CMD
 Wire Wire Line
 	8400 5050 8600 5050
 Text Label 8600 5050 0    50   ~ 0
-SDIO_CK
+SD_CLK
 Text Label 1800 3575 2    50   ~ 0
 I2C1_SDA
 Text Label 3400 3475 0    50   ~ 0
@@ -176,21 +176,21 @@ Text Label 4850 3400 2    50   ~ 0
 I2C1_SDA
 Text Label 4850 3300 2    50   ~ 0
 I2C1_SCL
-Text Label 6175 3125 0    50   ~ 0
+Text Label 6150 3300 0    50   ~ 0
 I2C2_SDA
-Text Label 6175 3225 0    50   ~ 0
-I2C2_SDL
+Text Label 6150 3400 0    50   ~ 0
+I2C2_SCL
 Text Label 4850 3200 2    50   ~ 0
 SPI1_SCK
 Text Label 4850 3100 2    50   ~ 0
 SPI1_MISO
 Text Label 4850 3000 2    50   ~ 0
 SPI1_MOSI
-Text Label 6175 2825 0    50   ~ 0
+Text Label 6150 3000 0    50   ~ 0
 SPI4_SCK
-Text Label 6175 2925 0    50   ~ 0
+Text Label 6150 3100 0    50   ~ 0
 SPI4_MISO
-Text Label 6175 3025 0    50   ~ 0
+Text Label 6150 3200 0    50   ~ 0
 SPI4_MOSI
 Wire Wire Line
 	8400 5150 8600 5150
@@ -328,9 +328,9 @@ Text Label 3400 2675 0    50   ~ 0
 UART1_RX
 Text Label 1800 2575 2    50   ~ 0
 UART1_TX
-Text Label 6175 2525 0    50   ~ 0
+Text Label 6150 2700 0    50   ~ 0
 UART1_RX
-Text Label 6175 2625 0    50   ~ 0
+Text Label 6150 2800 0    50   ~ 0
 UART1_TX
 $Comp
 L db26hd:DB26_Male_HighDensity_MountingHoles J1
@@ -386,9 +386,8 @@ Text Label 3400 2475 0    50   ~ 0
 UART2_TX
 Text Label 4850 2900 2    50   ~ 0
 SPI1_SS
-Text Label 6175 2725 0    50   ~ 0
+Text Label 6150 2900 0    50   ~ 0
 SPI4_SS
-NoConn ~ 5700 7000
 NoConn ~ 5700 10100
 Text Label 1625 6975 2    50   ~ 0
 VCC5
@@ -396,8 +395,6 @@ Text Label 1625 10075 2    50   ~ 0
 GND
 Text Label 4200 8400 2    50   ~ 0
 GND
-Text Label 4200 7000 2    50   ~ 0
-VCC3
 Text Label 4200 10100 2    50   ~ 0
 GND
 Text Label 3625 8075 0    50   ~ 0
@@ -545,10 +542,8 @@ NoConn ~ 5700 9700
 NoConn ~ 5700 9800
 NoConn ~ 5700 9900
 NoConn ~ 5700 10000
-NoConn ~ 5350 2200
 NoConn ~ 5350 2300
 NoConn ~ 5350 2400
-NoConn ~ 5650 2200
 NoConn ~ 5650 2300
 NoConn ~ 5650 2400
 NoConn ~ 5650 2500
@@ -609,8 +604,6 @@ Wire Wire Line
 	4200 8000 4700 8000
 Wire Wire Line
 	4200 7900 4700 7900
-Wire Wire Line
-	4200 7000 4700 7000
 Wire Wire Line
 	5700 7900 6200 7900
 Wire Wire Line
@@ -17731,4 +17724,19 @@ EndData
 $EndBitmap
 Text Notes 15475 11050 0    50   ~ 0
 1.1
+Text Label 12925 7775 0    50   ~ 0
+GND
+NoConn ~ 5700 7000
+Wire Wire Line
+	4200 7000 4700 7000
+Text Label 4200 7000 2    50   ~ 0
+VCC3
+Text Label 4850 2200 2    50   ~ 0
+VCC
+Text Label 6150 2200 0    50   ~ 0
+GND
+Wire Wire Line
+	4850 2200 5350 2200
+Wire Wire Line
+	6150 2200 5650 2200
 $EndSCHEMATC
