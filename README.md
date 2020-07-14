@@ -6,6 +6,8 @@ The FlatSat platform is composed of a main metallic support plate, which can pos
 
 All modules are hooked to a central hub via a sub-d DB26HD harness. The central hub has the main purpose of routing UART signals, regulating power (dispatched via sub-d, switchable) and linking all submodules together.
 
+![Board plan](plan.png)
+
 # The STM32F429IDISCOVERY adapter
 
 ## V1
