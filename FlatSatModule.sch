@@ -19,7 +19,7 @@ U 1 1 5EFA0449
 P 13550 7275
 F 0 "J2" H 13500 8092 50  0000 C CNN
 F 1 "Micro_SD_Card_Det" H 13500 8001 50  0000 C CNN
-F 2 "Connector_Card:microSD_HC_Hirose_DM3D-SF" H 15600 7975 50  0001 C CNN
+F 2 "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5" H 15600 7975 50  0001 C CNN
 F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 13550 7375 50  0001 C CNN
 	1    13550 7275
 	1    0    0    -1  
@@ -311,7 +311,7 @@ Wire Wire Line
 Wire Wire Line
 	12150 7775 12650 7775
 Wire Wire Line
-	14350 7775 14850 7775
+	14350 7775 14825 7775
 Text Label 12150 7775 2    50   ~ 0
 SD_DET
 Text Label 12150 7575 2    50   ~ 0
@@ -17357,7 +17357,7 @@ U 1 1 5F2B7DBA
 P 11250 2925
 F 0 "J1" H 11250 4542 50  0000 C CNN
 F 1 "DB26_Male_HighDensity_MountingHoles" H 11250 4451 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-26-HD_Male_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" H 10300 3325 50  0001 C CNN
+F 2 "DB-HD-26:DSUB-26-HD_Male_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" H 10300 3325 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Kycon/K66X-A26P-N?qs=SY6bF4iPirTxWgCH5IfY4Q%3D%3D" H 10300 3325 50  0001 C CNN
 	1    11250 2925
 	1    0    0    -1  
@@ -17396,7 +17396,6 @@ NoConn ~ 14000 2150
 NoConn ~ 14300 2150
 NoConn ~ 14300 2250
 NoConn ~ 14300 2350
-NoConn ~ 10950 1825
 NoConn ~ 10950 1925
 NoConn ~ 10950 2025
 NoConn ~ 10950 2125
@@ -17593,12 +17592,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0104
 U 1 1 5F3856D8
-P 14850 7775
-F 0 "#PWR0104" H 14850 7525 50  0001 C CNN
-F 1 "GND" H 14855 7602 50  0000 C CNN
-F 2 "" H 14850 7775 50  0001 C CNN
-F 3 "" H 14850 7775 50  0001 C CNN
-	1    14850 7775
+P 14825 7775
+F 0 "#PWR0104" H 14825 7525 50  0001 C CNN
+F 1 "GND" H 14830 7602 50  0000 C CNN
+F 2 "" H 14825 7775 50  0001 C CNN
+F 3 "" H 14825 7775 50  0001 C CNN
+	1    14825 7775
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -17719,4 +17718,113 @@ F 3 "" H 14875 1950 50  0001 C CNN
 	1    14875 1950
 	0    -1   -1   0   
 $EndComp
+$Comp
+L power:VCC #PWR0114
+U 1 1 5F180B31
+P 10850 1825
+F 0 "#PWR0114" H 10850 1675 50  0001 C CNN
+F 1 "VCC" V 10867 1953 50  0000 L CNN
+F 2 "" H 10850 1825 50  0001 C CNN
+F 3 "" H 10850 1825 50  0001 C CNN
+	1    10850 1825
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10850 1825 10950 1825
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5F1A4ECB
+P 7950 9675
+F 0 "H1" H 8050 9724 50  0000 L CNN
+F 1 "MountingHole_Pad" H 8050 9633 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 7950 9675 50  0001 C CNN
+F 3 "~" H 7950 9675 50  0001 C CNN
+	1    7950 9675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5F1A9D48
+P 7950 10275
+F 0 "H2" H 8050 10324 50  0000 L CNN
+F 1 "MountingHole_Pad" H 8050 10233 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 7950 10275 50  0001 C CNN
+F 3 "~" H 7950 10275 50  0001 C CNN
+	1    7950 10275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5F1B0CDB
+P 9125 9675
+F 0 "H3" H 9225 9724 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9225 9633 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 9125 9675 50  0001 C CNN
+F 3 "~" H 9125 9675 50  0001 C CNN
+	1    9125 9675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5F1B0CE5
+P 9125 10275
+F 0 "H4" H 9225 10324 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9225 10233 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 9125 10275 50  0001 C CNN
+F 3 "~" H 9125 10275 50  0001 C CNN
+	1    9125 10275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5F1B8016
+P 7950 10475
+F 0 "#PWR08" H 7950 10225 50  0001 C CNN
+F 1 "GND" H 7955 10302 50  0000 C CNN
+F 2 "" H 7950 10475 50  0001 C CNN
+F 3 "" H 7950 10475 50  0001 C CNN
+	1    7950 10475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 10475 7950 10375
+$Comp
+L power:GND #PWR07
+U 1 1 5F1C36E1
+P 7950 9875
+F 0 "#PWR07" H 7950 9625 50  0001 C CNN
+F 1 "GND" H 7955 9702 50  0000 C CNN
+F 2 "" H 7950 9875 50  0001 C CNN
+F 3 "" H 7950 9875 50  0001 C CNN
+	1    7950 9875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 9875 7950 9775
+$Comp
+L power:GND #PWR09
+U 1 1 5F1D16E2
+P 9125 9875
+F 0 "#PWR09" H 9125 9625 50  0001 C CNN
+F 1 "GND" H 9130 9702 50  0000 C CNN
+F 2 "" H 9125 9875 50  0001 C CNN
+F 3 "" H 9125 9875 50  0001 C CNN
+	1    9125 9875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9125 9875 9125 9775
+$Comp
+L power:GND #PWR010
+U 1 1 5F1D62FA
+P 9125 10475
+F 0 "#PWR010" H 9125 10225 50  0001 C CNN
+F 1 "GND" H 9130 10302 50  0000 C CNN
+F 2 "" H 9125 10475 50  0001 C CNN
+F 3 "" H 9125 10475 50  0001 C CNN
+	1    9125 10475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9125 10475 9125 10375
 $EndSCHEMATC
