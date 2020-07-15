@@ -153,7 +153,6 @@ UART2_TX
 Text Label 4675 8200 2    50   ~ 0
 UART2_RX
 NoConn ~ 2425 7375
-NoConn ~ 2425 7475
 NoConn ~ 2425 7575
 NoConn ~ 2425 7675
 NoConn ~ 2425 8075
@@ -163,7 +162,6 @@ NoConn ~ 2425 8575
 NoConn ~ 2425 8675
 NoConn ~ 2425 8775
 NoConn ~ 2425 8875
-NoConn ~ 2425 8975
 NoConn ~ 2425 9075
 NoConn ~ 2425 9175
 NoConn ~ 2425 9275
@@ -17838,4 +17836,9 @@ F 3 "" H 10975 10350 50  0001 C CNN
 	1    10975 10350
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1925 8975 2425 8975
+Text Label 1925 8975 2    50   ~ 0
+SD_DET
+NoConn ~ 2425 7475
 $EndSCHEMATC
